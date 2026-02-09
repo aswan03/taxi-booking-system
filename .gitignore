@@ -43,6 +43,7 @@ node_modules/
 *.ear
 *.ctxt
 .mvn/
+.mvn-bin/
 mvnw
 mvnw.cmd
 
