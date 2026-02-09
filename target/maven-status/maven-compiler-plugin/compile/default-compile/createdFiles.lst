@@ -1,8 +1,13 @@
-com\taxi\BookingRequest.class
 com\taxi\Main.class
-com\taxi\Taxi.class
-com\taxi\BookingSystem.class
+com\taxi\WebConfig.class
 com\taxi\TaxiApplication.class
+com\taxi\User.class
+com\taxi\AuthController.class
+com\taxi\BookingRequest.class
+com\taxi\Taxi.class
+com\taxi\UserRepository.class
+com\taxi\BookingSystem.class
+com\taxi\WebConfig$1.class
 com\taxi\Booking.class
 com\taxi\BookingController.class
 com\taxi\Customer.class
