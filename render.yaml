@@ -1,9 +1,10 @@
 services:
   - type: web
     name: taxi-backend
-    env: java
-    buildCommand: mvn clean package -DskipTests
-    startCommand: mvn spring-boot:run -Dspring-boot.run.arguments='--server.port=$PORT'
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    healthCheckPath: /api/taxis
     envVars:
       - key: PORT
         value: 8085
@@ -24,7 +25,7 @@ services:
           name: taxi-postgres
           property: password
       - key: ALLOWED_ORIGINS
-        sync: false  # Set this manually in Render dashboard
+        value: "*" # Update this with your frontend URL after deployment
 
 databases:
   - name: taxi-postgres
