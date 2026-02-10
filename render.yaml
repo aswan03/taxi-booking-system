@@ -10,12 +10,6 @@ services:
         value: org.postgresql.Driver
       - key: SPRING_JPA_DIALECT
         value: org.hibernate.dialect.PostgreSQLDialect
-      - key: SPRING_DATASOURCE_URL
-        value: "jdbc:postgresql://host:port/database" # PLACEHOLDER: Update in Dashboard
-      - key: SPRING_DATASOURCE_USERNAME
-        value: "user" # PLACEHOLDER: Update in Dashboard
-      - key: SPRING_DATASOURCE_PASSWORD
-        value: "password" # PLACEHOLDER: Update in Dashboard
       - key: ALLOWED_ORIGINS
         value: "*" # Update this with your frontend URL after deployment
 
