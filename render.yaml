@@ -13,22 +13,16 @@ services:
       - key: SPRING_JPA_DIALECT
         value: org.hibernate.dialect.PostgreSQLDialect
       - key: SPRING_DATASOURCE_URL
-        fromDatabase:
-          name: taxi-postgres
-          property: connectionString
+        value: "jdbc:postgresql://host:port/database" # PLACEHOLDER: Update in Dashboard
       - key: SPRING_DATASOURCE_USERNAME
-        fromDatabase:
-          name: taxi-postgres
-          property: user
+        value: "user" # PLACEHOLDER: Update in Dashboard
       - key: SPRING_DATASOURCE_PASSWORD
-        fromDatabase:
-          name: taxi-postgres
-          property: password
+        value: "password" # PLACEHOLDER: Update in Dashboard
       - key: ALLOWED_ORIGINS
         value: "*" # Update this with your frontend URL after deployment
 
-databases:
-  - name: taxi-postgres
-    plan: free
-    databaseName: taxidb
-    user: taxi_user
+# databases:
+#   - name: taxi-postgres
+#     plan: free
+#     databaseName: taxidb
+#     user: taxi_user
