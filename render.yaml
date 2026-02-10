@@ -11,7 +11,7 @@ services:
       - key: SPRING_JPA_DIALECT
         value: org.hibernate.dialect.PostgreSQLDialect
       - key: ALLOWED_ORIGINS
-        value: "*" # Update this with your frontend URL after deployment
+        value: "https://taxigo-app-nine.vercel.app" # Update this with your frontend URL after deployment
 
 # databases:
 #   - name: taxi-postgres
