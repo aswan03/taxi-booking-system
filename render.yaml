@@ -6,8 +6,6 @@ services:
     dockerfilePath: Dockerfile
     healthCheckPath: /api/taxis
     envVars:
-      - key: PORT
-        value: 8085
       - key: SPRING_DATASOURCE_DRIVER
         value: org.postgresql.Driver
       - key: SPRING_JPA_DIALECT
